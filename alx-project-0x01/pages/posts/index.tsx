@@ -9,7 +9,7 @@ interface IPost {
 }
 
 const Posts: React.FC<IPost> = ({posts}) => {
-    const [isModalOpen, setModalOpen] = useState<boolean>(false);
+    const [isModalOpen, setModalOpen] = useState(false);
     const [post, setPost] = useState<PostData | null>(null);
 
     const handleAddPost = (newPost: PostData) => {
