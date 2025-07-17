@@ -34,7 +34,7 @@ const Users: React.FC<IUsers> = ({posts}) => {
                 </div>
             </main>
 
-            {isModalOpen && (<UserModal onClose={() => setModalOpen(false)} onsubmit={handleNewUser}/>)}
+            {isModalOpen && (<UserModal onClose={() => setModalOpen(false)} onSubmit={handleNewUser}/>)}
         </div>
     )
 }
